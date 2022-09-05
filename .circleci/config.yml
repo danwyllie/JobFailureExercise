@@ -8,11 +8,11 @@ jobs:
       - run:
           name: "Send a return 1"
           shell: /bin/bash
-          command: "a"
+          command: "a fake command"
 
       - run:
           name: "Report failure"
-          command: "echo job failed!"
+          command: "echo Your job failed!"
           when: on_fail
 
 workflows:
